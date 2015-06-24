@@ -31,9 +31,9 @@
         }
         newSounds.play();
         console.log(newSounds);
-
        
       }
+
 
       }  
 

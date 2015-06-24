@@ -13,11 +13,17 @@
   </head>
 
   <body ng-controller="drumController as drum">
-    <div class="grid">
-      
-      <div class='pad' ng-repeat='pad in drum.pads track by $index'ng-click="drum.drumSound($index)">
-    
-    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col-md-2">
+        <h1>Angular Drum MPC</h1>
+      </div>
+      <div class="col-md-10">
+        <div class="grid">
+          <div class='pad' ng-repeat='pad in drum.pads track by $index' ng-Click="drum.drumSound($index)">{{drum.pad}}      
+        </div>
+        </div>
+      </div>
     </div>
 
   </body>
