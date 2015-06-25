@@ -29,7 +29,7 @@
           var newSounds = new Audio(sounds[index]);
         
         }
-        // newSounds.play();
+        newSounds.play();
         console.log(newSounds);
        
       }
