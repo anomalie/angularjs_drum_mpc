@@ -6,13 +6,14 @@
   drumController.$inject = ['$scope','$swipe'];
   
     function drumController($scope,$swipe){
-      var self= this;     
-      var sounds = ["./audio/ttc_01.mp3","./audio/ttc_02.mp3","./audio/ttc_03.mp3",
+      var self= this;
+
+      var sounds = ["./audio/ReverseFX.mp3","./audio/ttc_02.mp3","./audio/ttc_03.mp3",
         "./audio/ttc_04.mp3","./audio/hitom.mp3","./audio/flrtom.mp3",
-        "./audio/ttc_07.mp3","./audio/ttc_08.mp3","./audio/ttc_09.mp3",
-        "./audio/ttc_10.mp3","./audio/hihatopen.mp3","./audio/hihatclose.mp3",
-        "./audio/ttc_13.mp3","./audio/Kick2.mp3","./audio/Clap.mp3",
-        "./audio/ttc_16.mp3"];
+        "./audio/swell.mp3","./audio/crash.mp3","./audio/snare.mp3",
+        "./audio/Clap.mp3","./audio/hihatopen.mp3","./audio/hihatclose.mp3",
+        "./audio/Kick1.mp3","./audio/Kick2.mp3","./audio/Clap.mp3",
+        "./audio/snare.mp3"];
       
        self.pads= [
           {pad: "sample1"},{pad: "sample2"},{pad: "sample3"}, {pad: "sample4"},
@@ -24,14 +25,17 @@
        self.drumSound = drumSound;   
 
       function drumSound(index){
-        // var allSounds = sounds.length;
         for (i=0 ; i < sounds.length; i++){ 
           var newSounds = new Audio(sounds[index]);
         
         }
-        newSounds.play();
+        // newSounds.play();
         console.log(newSounds);
        
+      }
+
+      function drumHit(index){
+        newSounds.play();
       }
 
 

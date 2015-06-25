@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Angular Drum MPC</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/angular.min.js"></script>
     <script src="bower_components/angular-touch/angular-touch.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/drumController.js"></script>
+    <script src="js/jquery.js"></script>
   </head>
 
   <body ng-controller="drumController as drum">
@@ -20,8 +21,7 @@
       </div>
       <div class="col-md-10">
         <div class="grid">
-          <div class='pad' ng-repeat='pad in drum.pads track by $index' ng-Click="drum.drumSound($index)">{{drum.pad}}      
-        </div>
+          <div class='pad' ng-repeat='pad in drum.pads track by $index' ng-Click="drum.drumSound($index)">
         </div>
       </div>
     </div>

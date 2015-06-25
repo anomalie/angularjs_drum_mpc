@@ -1,4 +1,6 @@
-
+body{
+  background-color: honeydew;
+}
 .grid{
   height: 670px;
   width: 670px;
